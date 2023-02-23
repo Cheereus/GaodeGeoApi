@@ -45,7 +45,7 @@ rows = len(address_list)
 # 请求高德地图 API 返回经纬度
 # key 为高德开放平台应用生成的密钥
 # addr 结构化地址
-def get_gaode_data(addr, key="cd6866c941e61e69d63c4f1e7fdc3ed2"):
+def get_gaode_data(addr, key="e363ffe111111111111111111134acf1"):
     addr_encoded = quote(addr, safe='')
     response = requests.get(url=f'{baseUrl}address={addr_encoded}&key={key}', headers=headers)
     data = response.json()
